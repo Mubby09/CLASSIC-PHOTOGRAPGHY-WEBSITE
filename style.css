@@ -33,6 +33,7 @@ body {
     color: white;
     margin: 10px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
