@@ -33,9 +33,6 @@ body {
     line-height: 1.4;
     background-color: black;
     color: white;
-    margin: auto;
-    overflow-x: hidden;
-    width: auto;
 }
 
 .navbar {
@@ -497,58 +494,34 @@ input[type='submit'] {
         justify-content: center;
         align-content: center;
         align-items: center;
+        text-align: center;
     }
 }
 
-.offer {
+.bottom-pictures {
+    margin: auto;
     display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 10px;
+    text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
-    /* margin: 20px; */
-    margin: auto;
+    padding: 10px;
+    width: 100%;
 }
 
-
-.offer img {
+.bottom-pictures img {
     height: 70vh;
 }
 
-@media(max-width:768px) {
-    .offer {
+@media(max-width:1024px) {
+    .bottom-pictures {
         display: flex;
         flex-direction: column;
     }
 }
 
-
-/* .offer {
-    display: flex;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}  */
-
-/* .offer div {
-    margin: 20px;
-    padding: 20px;
-    background-color: rgb(32, 128, 128);
-}
-
-.offer div:hover {
-    transform: scale(1.128);
-    transition: all 0.5s linear;
-    cursor: pointer;
-}
-
-@media(max-width:767px) {
-    .offer {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-} */
 
 .fa {
     color: chartreuse;
@@ -577,4 +550,14 @@ input[type='submit'] {
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
 }
