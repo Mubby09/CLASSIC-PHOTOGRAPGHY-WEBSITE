@@ -68,12 +68,12 @@ nav ul li a {
   transition: 0.3s all linear;
 }
 
-.container {
+/* .container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 0 3rem;
-}
+} */
 
 .showcase {
   background: var(--primary-color);
