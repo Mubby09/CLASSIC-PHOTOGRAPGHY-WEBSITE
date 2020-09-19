@@ -9,15 +9,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" />
     <title>Classic Photography</title>
 </head>
 
 <body>
-    <!-- <div class="arrow">
+    <div class="arrow">
         <a href="#"> <i class="fa fa-arrow-up fa-2x"></i>
             <p>Back to Top</p>
         </a>
-    </div> -->
+    </div>
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
@@ -88,29 +91,63 @@
     </section>
 
     <section>
-        <h1 id="services">Services We <span style="color: chartreuse;">Offer</span></h1>
+        <h1 id="services">Services We <span style="color: coral;">Offer</span></h1>
         <div class="works">
-            <h1>Beauty & Lifestyle</h1>
-            <h1>Corporate Events</h1>
-            <h1>Weddings</h1>
-            <h1>Media Consultancy</h1>
-            <h1>Studio Rentals</h1>
+            <a href="./beautyAndLifeStyle.htm" class="btn">Beauty & Lifestyle</a>
+            <a href="./corporate.htm" class="btn">Corporate Events & Weddings</a>
+            <a href="./corporate.htm" class="btn">Nature And Landscape</a>
+            <a href="" class="btn">Media Consultancy</a>
+            <a href="" class="btn">Studio Rentals</a>
         </div>
     </section>
 
-    <div class="bottom-pictures">
-        <img src="./images/593a8d81-0e81-462a-af12-42e40463b3aa.jpg" alt="">
-        <img src="./images/57b65cf0-5c92-4b98-9f74-f1f11c8a7ff0.JPG" alt="">
-        <img src="./images/9a7737d6-cc86-467f-9773-021bad043226.JPG" alt="">
+    <div>
+        <h1 style="text-align: center;"><span style="color: coral;">Featured</span> Pictures</h1>
+        <div class="bottom-pictures">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504360/y_bmt94l.jpg" alt="">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504963/AX8W0834_-_Copy_tjesyf.jpg"
+                alt="">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504444/e_viwowt.jpg" alt="">
+        </div>
     </div>
+
+    <!-- 
+    <div class="col-md-3">
+        <a href="/images/1ac47104-d4b3-466e-b5f5-d9bdca0c759d.jpg" data-toggle='lightbox' data-gallery='img-gallery'>
+            <img src="/images/1ac47104-d4b3-466e-b5f5-d9bdca0c759d.jpg" class="img-fluid mb-2" alt="">
+        </a>
+    </div> -->
+
 
     <footer>
         <p> &copy;All Rights Reserved</p>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+        crossorigin="anonymous">
+    </script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- lightbox init -->
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
 </body>
 
