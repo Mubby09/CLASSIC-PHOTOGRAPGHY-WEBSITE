@@ -77,7 +77,6 @@ nav ul li a {
 }
 
 
-
 .showcase {
   background: var(--primary-color);
   color: #fff;
@@ -555,7 +554,7 @@ input[type="submit"] {
 .details {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 20px;
 }
 
