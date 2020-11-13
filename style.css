@@ -610,7 +610,6 @@ footer {
 
 @media (max-width: 500px) {
   .ope {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
   }
@@ -618,7 +617,7 @@ footer {
   .ope img {
     object-fit: cover;
     margin: auto;
-    width: 100px;
+    width: 200px;
     height: 100%;
     border-radius: 10px;
   }
