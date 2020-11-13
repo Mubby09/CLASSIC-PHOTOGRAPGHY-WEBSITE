@@ -577,3 +577,48 @@ footer {
   margin-top: 20px;
   padding: 10px;
 }
+
+.ope {
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ope img {
+  object-fit: cover;
+  margin-left: 100px;
+}
+
+.ope .about-ope {
+  padding: 50px;
+}
+
+.ope-social-networks .fa {
+  padding: 10px;
+}
+
+.ope-social-networks .fa:hover {
+  color: grey;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media(max-width:500px) {
+  .ope {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ope img {
+    object-fit: cover;
+    margin: auto;
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
