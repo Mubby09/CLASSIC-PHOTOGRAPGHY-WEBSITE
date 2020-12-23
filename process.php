@@ -11,5 +11,5 @@
     //send email
     mail($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
     
-    header('Location: http://classicphotography.org/success.htm');
+    header('Location: http://classicphotography.org/success.html');
   }

@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" />
     <title>Classic Photography</title>
 </head>
 
@@ -24,18 +29,18 @@
         </div>
         <div class="menu">
             <div>
-                <div>
-                    <ul>
-                        <li><a href="./index.htm">Home</a></li>
-                        <li><a href="./contact.htm">Contact Info</a></li>
-                        <li><a href="./appointment.htm">Book an appointment</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="./index.htm">Home</a></li>
+                    <li><a href="./contact.htm">Contact Info</a></li>
+                    <li><a href="./appointment.htm">Book an appointment</a></li>
+                    <li><a href="./company.htm">Company profile</a></li>
+                    <li><a href="./opeadeniyi.htm">Creative director</a></li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <logo class="logo">
             <a href="index.htm"> <img src="./images/IMG_3580.PNG" alt="logo" width="200" height="100"></a>
         </logo>
@@ -48,53 +53,117 @@
                 <li><a href="./appointment.htm">Book an appointment</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+
+    <div class="navbar">
+        <logo class="logo">
+            <a href="index.htm"> <img src="./images/IMG_3580.PNG" alt="logo" width="200" height="100"></a>
+        </logo>
+
+        <ul class="nav justify-content-center">
+            <li>
+                <div class="dropdown">
+                    <span>About Us</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="drop"><a href="company.htm">Company Profile</a></li>
+                            <li class="drop" style="color: coral;"><a href="./opeadeniyi.htm">Creative director</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.htm">Contact Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./appointment.htm">Book an Appointment</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+
+
+        </ul>
+
+
+    </div>
+
 
     <div class="classic">
         <img src="./images/IMG_3580.PNG" alt="" width="100px">
     </div>
     <div class="slider">
         <figure>
-            <img src="./images/45eec934-c576-4601-b313-06a1690b6ee6.JPG" alt="">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729590/6_2_q9hyp7.jpg" alt="">
+            <!-- <img src="./images/45eec934-c576-4601-b313-06a1690b6ee6.JPG" alt=""> -->
             <img src="./images/04e69856-5e4a-4c12-8b96-158c4b23a306.jpg" alt="">
-            <img src="/images/0508ef35-77f3-43d3-b296-18e63f55a4be.JPG" alt="">
+            <!-- <img src="/images/0508ef35-77f3-43d3-b296-18e63f55a4be.JPG" alt=""> -->
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729589/6_2_zu0c2y.jpg" alt="">
             <img src="./images/8dbf2625-f121-4bad-8a3d-71dd381ce803.JPG" alt="">
             <img src="./images/45eec934-c576-4601-b313-06a1690b6ee6.JPG" alt="">
+
         </figure>
     </div>
-    <br>
-    <br>
-    <section id="what">
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+    <div class="bg-secondary">
+        <section id="what">
+            <!-- <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <img src="./images/ba40b3e0-4aff-4fe8-9df3-96d3140108f4.JPG" alt="">
-        </div>
-        <div class="who">
-            <h3 class="comp-title">Company’s Profile</h3>
-            <p>
+        </div> -->
+            <div class="who">
+                <!-- <h3 style="color: coral;">Some of our Clients...</h3> -->
+                <div class="clients">
+                    <div>
+                        <img class="client-logo"
+                            src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608735456/OGSG_tpdhms.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="client-logo"
+                            src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608735457/THGC_bkwffk.png" alt="">
+                    </div>
+                    <div>
+                        <img class="client-logo"
+                            src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608735456/LASG_grzy43.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="client-logo"
+                            src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608736129/LIRS_vdhu58.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="studio_pictures">
+                <div class="row">
+                    <div class="col-md-6">
 
-                Classic Photography is a one-stop media house for top quality images and related photography services
-                including video shoots, advert shoot and photoshoots, canvass framing, special photo books, glazed photo
-                frames, adverts and media.
-                Our exclusively high quality and cost-effective service delivery explain why we remain attractive and
-                preferred to clients. Our excellent customer service and competitive prices also ensure that we stand
-                out amongst competitors. This among other reasons has made Classic Photography the preferred media hub
-                for many. We have been able to achieve this through quality service delivery and by training and
-                retraining our best hands-on required skills and professionalism.
-                At Classic Photography, we leave long-lasting memories with our clients by constantly surpassing
-                expectations. We hold our existing customers in high esteem while we constantly watch out for new
-                clients. To showcase a piece of our excellent driven service to new clients, we go out of our ways to
-                offer highly discounted photoshoot sessions as incentives.
-                Our fast-growing client base includes individuals, corporate bodies, students, schools, professional
-                event planners and government at all levels: LIRS, Lagos state ministry of Arts and Tourism, Laralec
-                Construction Company, Japan International Corporation Agency, Lagos State Electricity Board, CACOVID,
-                JIO Foto, Dexter Fotos Limited, Ogun State Ministry of Finance and Treasure House of God Church,
-                Abeokuta and Jaiyeola Hospital in Lagos. And sincerely we can’t wait to have you join our list of happy
-                and satisfied customers.
+                        <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729595/AX8W1426_a4mb26.jpg"
+                            class="img-fluid mb-2 studio-picture" alt="">
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1600504881/AX8W0596_apgdvq.jpg"
+                            class="img-fluid mb-2 studio-picture" alt="">
+                    </div>
+                </div>
 
-            </p>
-            <a href="./opeadeniyi.htm" class="btn">Creative Director</a>
-        </div>
-    </section>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1600777226/6ba75aa9-d973-4fa4-bce5-369acab5c16e_myafph.jpg"
+                            class="img-fluid mb-2 studio-picture" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1600850900/6f5d7a19-aa75-46ca-9c66-4175893dd941_aqwjrn.jpg"
+                            class="img-fluid mb-2 studio-picture" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729592/qqw_mvpq2w.jpg"
+                            class="img-fluid mb-2 studio-picture" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <section>
         <h1 id="services">Services We <span style="color: coral;">Offer</span></h1>
@@ -102,7 +171,7 @@
             <a href="./beautyAndLifeStyle.htm" class="btn">Beauty & Lifestyle</a>
             <a href="./corporate.htm" class="btn">Corporate Events & Weddings</a>
             <a href="./natureAndLandscape.htm" class="btn">Nature And Landscape</a>
-            <a href="./studioRentals.htm" class="btn">Studio Rentals</a>
+            <!-- <a href="./studioRentals.htm" class="btn">Studio Rentals</!-->
             <a href="" class="btn">Media Consultancy</a>
         </div>
     </section>
@@ -111,9 +180,11 @@
         <h1 style="text-align: center;"><span style="color: coral;">Featured</span> Pictures</h1>
         <div class="bottom-pictures">
             <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504360/y_bmt94l.jpg" alt="">
-            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504963/AX8W0834_-_Copy_tjesyf.jpg"
-                alt="">
-            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504444/e_viwowt.jpg" alt="">
+            <!-- <img src="https://res.cloudinary.com/dg79j3dum/image/upload/f_auto/v1600504963/AX8W0834_-_Copy_tjesyf.jpg"
+                alt=""> -->
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729590/6_g5nojt.jpg" alt="">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608730807/17_dbdrdr.jpg" alt="">
+            <img src="https://res.cloudinary.com/dg79j3dum/image/upload/v1608729596/061A8159_hxqs32.jpg" alt="">
         </div>
     </div>
 
@@ -123,6 +194,20 @@
     </footer>
 
 
+    <!-- lightbox init -->
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

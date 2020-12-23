@@ -15,7 +15,15 @@
 
 html {
   scroll-behavior: smooth;
-  margin: auto !important;
+  overflow-x: hidden;
+  /* width: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto !important; */
+}
+
+.outer-container {
+  margin-left: -35px;
 }
 
 .arrow {
@@ -32,13 +40,11 @@ body {
   line-height: 1.4;
   background-color: black;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  min-width: auto;
   line-height: 27px;
   letter-spacing: normal;
   word-spacing: 2px;
-  /* margin: auto; */
+  overflow-x: hidden;
 }
 
 nav ul li a {
@@ -61,24 +67,79 @@ nav ul li a {
 }
 
 .navbar ul li {
-  color: black;
+  color: coral;
   display: inline-block;
   padding: 2rem;
 }
 
+.navbar ul li .nav-link {
+  color: coral;
+}
+
+
 .navbar ul li :hover {
   color: wheat;
   cursor: pointer;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
   transition: 0.3s all linear;
 }
 
-.container {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-content: center !important;
-  align-items: center !important;
+.nav-item {
+  padding-left: 50px;
+}
+
+.navbar {
+  display: flex;
+  /* grid-template-columns: 1fr 2fr; */
+}
+
+.menu ul li a {
+  color: coral;
+  list-style-type: none;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 20px;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+.dropdown {
+  margin-top: 28px;
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: coral;
+  height: auto;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  /* padding: 12px 16px; */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.navbar .nav .dropdown .dropdown-content .drop {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  padding-right: 20px;
 }
 
 .showcase {
@@ -376,9 +437,9 @@ a {
 }
 
 #what {
-  margin: 20px 60px;
+  margin: 60px 60px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 3fr;
   text-align: center;
   grid-gap: 10px;
 }
@@ -391,8 +452,8 @@ a {
   align-content: center;
 }
 
-.comp-title {
-  text-decoration: underline;
+.studio_pictures {
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -405,7 +466,7 @@ a {
   }
 
   #what img {
-    display: none;
+    display: block;
   }
 }
 
@@ -563,20 +624,6 @@ input[type="submit"] {
   text-align: center;
 }
 
-.details {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
-  padding: 50px;
-}
-
-@media (max-width: 768px) {
-  .details {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 footer {
   width: 100%;
   background-color: gray;
@@ -643,4 +690,32 @@ footer {
   align-items: center;
   margin-top: 100px;
   background-color: coral;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.client-logo {
+  width: 200px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.studio-picture {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.company {
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
